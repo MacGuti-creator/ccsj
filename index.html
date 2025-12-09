@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan TIC 2026 - Colegio Campestre San José</title>
+    <!-- Carga de Tailwind CSS para un diseño responsivo y moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para el tema oscuro y vibrante */
+        :root {
+            --color-primary: #1F2937; /* Gris oscuro para fondo principal */
+            --color-accent-blue: #00FFFF; /* Cian Neón */
+            --color-accent-fuchsia: #FF00FF; /* Fucsia Neón */
+            --color-accent-lime: #CCFF00; /* Lima Neón */
+            --color-text-light: #F9FAFB; /* Texto claro */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            line-height: 1.6;
+        }
+
+        .neon-text {
+            text-shadow: 0 0 5px var(--color-accent-blue), 0 0 10px var(--color-accent-blue);
+            color: var(--color-accent-blue);
+        }
+
+        .neon-button {
+            border: 2px solid var(--color-accent-fuchsia);
+            box-shadow: 0 0 10px var(--color-accent-fuchsia);
+            transition: all 0.3s ease;
+        }
+
+        .neon-button:hover {
+            background-color: var(--color-accent-fuchsia);
+            color: var(--color-primary);
+            box-shadow: 0 0 20px var(--color-accent-fuchsia);
+        }
+
+        .card-glow {
+            border: 1px solid var(--color-accent-lime);
+            box-shadow: 0 0 8px var(--color-accent-lime);
+        }
+
+        .accent-bg-blue {
+            background-color: rgba(0, 255, 255, 0.1);
+            border-left: 4px solid var(--color-accent-blue);
+        }
+        .accent-bg-fuchsia {
+            background-color: rgba(255, 0, 255, 0.1);
+            border-left: 4px solid var(--color-accent-fuchsia);
+        }
+        .accent-bg-lime {
+            background-color: rgba(204, 255, 0, 0.1);
+            border-left: 4px solid var(--color-accent-lime);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header / Diapositiva 1 -->
+    <header class="py-16 px-4 md:px-8 text-center bg-gray-900 border-b-4 border-cyan-500">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 neon-text">
+                PLAN TIC 2026
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6">
+                El Futuro de Nuestra Enseñanza
+            </h2>
+            <p class="text-lg text-gray-400">
+                Hacia un Ecosistema de Innovación Educativa y Transformación Digital en el Colegio Campestre San José.
+            </p>
+            <!-- GIF Animado sugerido: Cerebro digital pulsando -->
+            <img src="https://placehold.co/150x150/00FFFF/000000?text=Cerebro+Digital+GIF" alt="GIF de Cerebro Digital Pulsando" class="mx-auto mt-8 mb-10 rounded-full shadow-lg">
+
+            <!-- Botón de Ejecutar/Previsualizar (Call to Action) -->
+            <button id="startButton" class="neon-button text-white px-8 py-3 text-xl rounded-full font-bold uppercase tracking-wider transition-all duration-500 hover:scale-105">
+                Explorar el Plan
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-12 px-4 md:px-8">
+
+        <!-- Diapositiva 2: Visión -->
+        <section id="vision" class="mb-16 p-8 rounded-xl card-glow bg-gray-800">
+            <h3 class="text-4xl font-bold mb-4 text-white">
+                No es solo tecnología, es <span class="text-lime-400">Pedagogía</span>
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-xl mb-6">Nuestra visión trasciende la simple dotación de equipos y conectividad. Las TIC serán el motor del **cambio pedagógico**.</p>
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-300">
+                        <li class="hover:text-cyan-400 transition">Transición de modelos tradicionales a **metodologías activas**.</li>
+                        <li class="hover:text-cyan-400 transition">Foco en Aprendizaje Basado en Proyectos (ABP), gamificación y *blended learning*.</li>
+                    </ul>
+                </div>
+                <!-- Imagen estática sugerida: Estudiantes colaborando -->
+                <img src="https://placehold.co/500x300/1F2937/FFFFFF?text=Estudiantes+Colaborando" alt="Estudiantes usando tecnología en colaboración" class="w-full rounded-lg shadow-2xl border-2 border-cyan-400">
+            </div>
+        </section>
+
+        <!-- Diapositiva 3: El Docente -->
+        <section id="docente" class="mb-16 p-8 rounded-xl bg-gray-900 border-2 border-fuchsia-500">
+            <h3 class="text-4xl font-bold mb-6 text-fuchsia-400 text-center">
+                El Docente: El Corazón de la Innovación
+            </h3>
+            <p class="text-2xl italic text-gray-200 text-center mb-8">
+                "Ustedes son los protagonistas de la transformación digital."
+            </p>
+            <div class="flex justify-center">
+                 <!-- GIF Animado sugerido: Director de orquesta dirigiendo -->
+                <img src="https://placehold.co/180x180/FF00FF/000000?text=Liderazgo+Docente+GIF" alt="GIF de Liderazgo Docente" class="rounded-full shadow-xl">
+            </div>
+            <p class="text-center text-lg mt-6 text-gray-300">
+                El plan busca formar al **"docente investigador"** mediante capacitación pertinente, práctica, situada y colaborativa.
+            </p>
+        </section>
+
+        <!-- Diapositiva 4: Ejes de Transformación -->
+        <section id="ejes" class="mb-16">
+            <h3 class="text-4xl font-bold mb-10 text-center neon-text">
+                Nuestra Hoja de Ruta: Los 4 Ejes de Transformación
+            </h3>
+
+            <div class="grid gap-6 lg:grid-cols-4">
+
+                <!-- Eje 1: Curricular y Pedagógica -->
+                <div class="p-6 rounded-lg accent-bg-blue transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer" onclick="toggleDetails('eje1-details')">
+                    <h4 class="text-2xl font-bold text-cyan-400 mb-2">Eje 1</h4>
+                    <p class="font-semibold text-lg">Transformación Curricular y Pedagógica</p>
+                    <div id="eje1-details" class="mt-4 hidden text-sm text-gray-300">
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Enfoque STEM+.</li>
+                            <li>Metodologías Activas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Eje 2: Desarrollo Docente -->
+                <div class="p-6 rounded-lg accent-bg-fuchsia transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer" onclick="toggleDetails('eje2-details')">
+                    <h4 class="text-2xl font-bold text-fuchsia-400 mb-2">Eje 2</h4>
+                    <p class="font-semibold text-lg">Desarrollo Profesional Docente</p>
+                    <div id="eje2-details" class="mt-4 hidden text-sm text-gray-300">
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Formación 100% del cuerpo docente.</li>
+                            <li>Uso pedagógico de IA segura.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Eje 3: Entorno Digital y Acceso -->
+                <div class="p-6 rounded-lg accent-bg-lime transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer" onclick="toggleDetails('eje3-details')">
+                    <h4 class="text-2xl font-bold text-lime-400 mb-2">Eje 3</h4>
+                    <p class="font-semibold text-lg">Entorno Digital y Acceso</p>
+                    <div id="eje3-details" class="mt-4 hidden text-sm text-gray-300">
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Dotación para CTeI (Robótica, Arduino).</li>
+                            <li>Conectividad segura y oportuna.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Eje 4: Gestión y Sostenibilidad -->
+                <div class="p-6 rounded-lg bg-yellow-900/10 border-l-4 border-yellow-400 transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer" onclick="toggleDetails('eje4-details')">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-2">Eje 4</h4>
+                    <p class="font-semibold text-lg">Gestión Institucional y Sostenibilidad</p>
+                    <div id="eje4-details" class="mt-4 hidden text-sm text-gray-300">
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Liderazgo estratégico.</li>
+                            <li>Alianzas y comunidad.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Diapositivas 5, 6, 7 (Detalle de Ejes) - Secciones con botón para expandir -->
+        <section class="space-y-12">
+            <!-- Detalle Eje 1 -->
+            <div class="p-8 rounded-xl bg-gray-800 border-2 border-cyan-500">
+                <h4 class="text-3xl font-bold text-cyan-400 mb-4">Eje 1 Detallado: STEM+ y Pensamiento Computacional</h4>
+                <div id="content-eje1" class="hidden">
+                    <div class="grid md:grid-cols-3 gap-6 items-center mt-6">
+                        <div class="md:col-span-2">
+                            <p class="text-lg mb-4 text-gray-300">Se implementará el **enfoque STEM+** (Ciencia, Tecnología, Ingeniería, Matemáticas + Humanidades/Arte) de forma integrada y contextualizada en el currículo.</p>
+                            <p class="text-lg font-semibold text-white">Actualización del área de Tecnología e Informática:</p>
+                            <ul class="list-disc list-inside ml-4 mt-2 text-gray-300">
+                                <li>Programación y Robótica.</li>
+                                <li>Diseño de Software.</li>
+                                <li>Fomento de la investigación escolar.</li>
+                            </ul>
+                        </div>
+                        <!-- Imagen estática sugerida: Bodegón tecnológico -->
+                        <img src="https://placehold.co/200x200/293a4f/FFFFFF?text=Programación" alt="Programación y Robótica" class="w-full rounded-lg shadow-xl">
+                    </div>
+                </div>
+                <button class="neon-button mt-4 px-4 py-2 rounded-full font-semibold text-sm" onclick="toggleContent('content-eje1', this)">
+                    Ver Detalle del Eje 1
+                </button>
+            </div>
+
+            <!-- Detalle Eje 2 -->
+            <div class="p-8 rounded-xl bg-gray-800 border-2 border-fuchsia-500">
+                <h4 class="text-3xl font-bold text-fuchsia-400 mb-4">Eje 2 Detallado: Formación Docente en 4RI</h4>
+                <div id="content-eje2" class="hidden">
+                    <div class="grid md:grid-cols-3 gap-6 items-center mt-6">
+                        <div class="md:col-span-2">
+                            <p class="text-lg font-semibold text-white mb-2">¿En qué nos formaremos?</p>
+                            <ul class="list-disc list-inside ml-4 text-gray-300">
+                                <li>Uso pedagógico de **Inteligencia Artificial (IA) segura** y ética.</li>
+                                <li>Bases de Programación y Robótica.</li>
+                                <li>Aplicación de metodologías activas (ABP, Gamificación) y las 5 Competencias TIC.</li>
+                            </ul>
+                        </div>
+                        <!-- GIF Animado sugerido: Barra de carga completándose al 100% -->
+                        <img src="https://placehold.co/200x200/FF00FF/000000?text=Formación+100%25+GIF" alt="Formación al 100%" class="w-full rounded-lg shadow-xl">
+                    </div>
+                </div>
+                <button class="neon-button mt-4 px-4 py-2 rounded-full font-semibold text-sm" onclick="toggleContent('content-eje2', this)">
+                    Ver Detalle del Eje 2
+                </button>
+            </div>
+
+            <!-- Detalle Eje 3 -->
+            <div class="p-8 rounded-xl bg-gray-800 border-2 border-lime-500">
+                <h4 class="text-3xl font-bold text-lime-400 mb-4">Eje 3 Detallado: Entorno Digital y Acceso</h4>
+                <div id="content-eje3" class="hidden">
+                    <p class="text-lg mb-4 text-gray-300">Desarrollo de una infraestructura robusta para soportar las exigencias de la Cuarta Revolución Industrial.</p>
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <p class="text-lg font-semibold text-white mb-2">Equipamiento:</p>
+                            <ul class="list-disc list-inside ml-4 text-gray-300">
+                                <li>Kits de Robótica (Arduino, micro:bit).</li>
+                                <li>Nuevos terminales (computadores o tabletas).</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-lg font-semibold text-white mb-2">Conectividad:</p>
+                            <ul class="list-disc list-inside ml-4 text-gray-300">
+                                <li>Internet oportuno y disponible en horas académicas.</li>
+                                <li>Refuerzo de la seguridad digital.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="neon-button mt-4 px-4 py-2 rounded-full font-semibold text-sm" onclick="toggleContent('content-eje3', this)">
+                    Ver Detalle del Eje 3
+                </button>
+            </div>
+        </section>
+
+        <!-- Diapositiva 8: Conclusión y Proyección -->
+        <section id="conclusion" class="mt-16 p-10 rounded-xl text-center bg-gray-900 border-4 border-yellow-400">
+            <h3 class="text-5xl font-extrabold mb-4 text-yellow-400">
+                ¡Hacia la Vanguardia Educativa!
+            </h3>
+            <p class="text-xl md:text-2xl text-white mb-6">
+                Para el 2026, habremos fortalecido nuestro entorno digital para impulsar el desarrollo de competencias de la **Cuarta Revolución Industrial (4RI)**.
+            </p>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                Formaremos ciudadanos capaces de usar el conocimiento científico y tecnológico para resolver problemas complejos y sostenibles.
+            </p>
+            <!-- GIF Animado sugerido: Cohete despegando -->
+            <img src="https://placehold.co/150x150/FFD700/000000?text=Cohete+Despegando+GIF" alt="GIF de Cohete Despegando" class="mx-auto mt-8 rounded-lg shadow-2xl">
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 text-gray-500 border-t border-gray-700 mt-10">
+        <p>Plan TIC 2026 - Colegio Campestre San José | <a href="http://www.ccsj.edu.co" target="_blank" class="hover:text-cyan-400 transition">www.ccsj.edu.co</a></p>
+    </footer>
+
+    <script>
+        // Función para alternar la visibilidad de los detalles de los Ejes
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+
+        // Función para alternar la visibilidad de contenido detallado y cambiar texto del botón
+        function toggleContent(id, button) {
+            const content = document.getElementById(id);
+            const isHidden = content.classList.contains('hidden');
+
+            content.classList.toggle('hidden');
+
+            if (isHidden) {
+                button.textContent = 'Ocultar Detalle del Eje ' + id.slice(-1);
+            } else {
+                button.textContent = 'Ver Detalle del Eje ' + id.slice(-1);
+            }
+        }
+
+        // Nueva función para el botón Explorar el Plan (simula "ejecutar")
+        document.getElementById('startButton').addEventListener('click', () => {
+            // Desplazamiento suave hacia la sección principal del contenido
+            document.getElementById('vision').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
